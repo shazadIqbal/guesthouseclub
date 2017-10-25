@@ -1,8 +1,30 @@
 <p>
   view-guest-house works! {{id}}
 </p>
-<ul>
+<div *ngIf="details">
+<div class="row" >
+  <div class="col-md-4" >
+     ID : {{details.id}}
+  </div>
+</div>
+<div class="row" >
+  <div class="col-md-4" >
+     name : {{details.name}}
+  </div>
+</div>
+<div class="row" >
+  <div class="col-md-4" >
+    description :  {{details.description}}
+  </div>
+</div>
+<div class="row" >
+  <div class="col-md-4" >
+    image :  <img [src]="details.img" style="width:150px;height:150;">
+  </div>
+</div>
+</div>
+ <!-- <ul>
   <li *ngFor="let list of ghdetails">
-    {{ list.id }}
+    {{ list.name }}
   </li>
-</ul>
+</ul>  -->
