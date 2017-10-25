@@ -10,7 +10,7 @@ export class ManageGuesthouseComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
   ghlist:guesthouselist[] ;
   //dtTrigger: Subject<any> = new Subject();
-  constructor(
+  constructor( 
     private router:Router,
     private _mghservice : mghService) { }
 
@@ -32,5 +32,6 @@ export class ManageGuesthouseComponent implements OnInit {
 export class guesthouselist{
   id:number;
   name:String;
+  address:String;
 
 }

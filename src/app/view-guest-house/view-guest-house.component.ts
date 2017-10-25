@@ -1,7 +1,7 @@
 import { guesthouselist } from './../manage-guesthouse/manage-guesthouse.component';
 import { mghService } from './../manage-guesthouse/manageguestHouseService';
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-view-guest-house',
@@ -9,7 +9,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./view-guest-house.component.css']
 })
 export class ViewGuestHouseComponent implements OnInit {
-  ghdetails : guesthouselist[];
+  ghdetails :any= [];
+  details;
   id:number;
   constructor(
     private _mghService : mghService,
@@ -18,10 +19,16 @@ export class ViewGuestHouseComponent implements OnInit {
   ngOnInit() {  
      this.route.params.subscribe(params=>{
         this.id = +params['id'];
+      
     });
-    this._mghService.getghlist().subscribe(res => this.ghdetails = res);
+    this._mghService.getghView().then(res => {
+      this.ghdetails = res;
+      //console.log(res[this.id]);
+      console.log(this.ghdetails);
+      console.log(this.details = this.ghdetails[this.id ]);
+    });
     
   }
-  
 
+ 
 }

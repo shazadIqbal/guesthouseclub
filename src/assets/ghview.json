@@ -1,0 +1,6 @@
+[
+    {"id":1,"name":"lux 1 ","description":"ever cool guest house","img":"http://localhost:4200/assets/guestlogo.png"},
+    {"id":2,"name":"lux 2 ","description":"ever cool guest house","img":"http://localhost:4200/assets/love-closet.jpg"},
+    {"id":3,"name":"lux 3 ","description":"ever cool guest house","img":"http://localhost:4200/assets/date.PNG"},
+    {"id":4,"name":"lux 4 ","description":"ever cool guest house","img":"http://localhost:4200/assets/guestlogo.png"}
+]
