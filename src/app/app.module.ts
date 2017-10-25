@@ -11,11 +11,7 @@ import { GuestHouseComponent } from './guest-house/guest-house.component';
 import { ManageGuesthouseComponent } from './manage-guesthouse/manage-guesthouse.component';
 import {HttpModule} from '@angular/http';
 import { ViewGuestHouseComponent } from './view-guest-house/view-guest-house.component';
-<<<<<<< HEAD
 import { ViewSliderComponent } from './view-slider/view-slider.component';
-=======
-
->>>>>>> master
 @NgModule({
   declarations: [
     AppComponent,
