@@ -1,3 +1,4 @@
+import { AddSliderComponent } from './add-slider/add-slider.component';
 import { Http,JsonpModule } from '@angular/http';
 import { CONST_ROUTING } from './routing';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +13,7 @@ import { ManageGuesthouseComponent } from './manage-guesthouse/manage-guesthouse
 import {HttpModule} from '@angular/http';
 import { ViewGuestHouseComponent } from './view-guest-house/view-guest-house.component';
 import { ViewSliderComponent } from './view-slider/view-slider.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,7 @@ import { ViewSliderComponent } from './view-slider/view-slider.component';
     GuestHouseComponent,
     ManageGuesthouseComponent,
     ViewGuestHouseComponent,
-    ViewSliderComponent
+    ViewSliderComponent,AddSliderComponent
   ],
   imports: [
     BrowserModule,DataTablesModule,HttpModule,CONST_ROUTING],

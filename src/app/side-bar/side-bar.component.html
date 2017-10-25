@@ -23,7 +23,20 @@
                       <i class="fa fa-plus fa-lg"></i> Add Guest House
                       </a></li>
                     </ul>
-
+                  
+                    <!-- view slider added -->
+                    <li  data-toggle="collapse" data-target="#slider" class="collapsed ">
+                      <i class="fa fa-house fa-lg"></i> Gallery <span class="arrow"></span>
+                    </li>
+                    <ul class="sub-menu collapse" id="slider">
+                         <li class="active"><a [routerLink]="['/addslider']">Add addslider</a></li>
+                    
+                        <li><a [routerLink]="['/viewslider']" >
+                         view slider
+                        </a>
+                        </li>
+                    </ul>
+    
 
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
                   <a href="#"><i class="fa fa-globe fa-lg"></i> Services <span class="arrow"></span></a>
