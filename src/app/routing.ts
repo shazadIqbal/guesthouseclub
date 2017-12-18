@@ -2,7 +2,7 @@ import { AddSliderComponent } from './add-slider/add-slider.component';
 import { ViewSliderComponent } from './view-slider/view-slider.component';
 import { ViewGuestHouseComponent } from './view-guest-house/view-guest-house.component';
 import { ManageGuesthouseComponent } from './manage-guesthouse/manage-guesthouse.component';
-import { GuestHouseComponent } from './guest-house/guest-house.component';
+import { GuestHouseComponent } from './add-guest-house/guest-house.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { Routes, RouterModule } from '@angular/router';
 // import { CurrencyComponent } from "./currency/currency.component";
@@ -14,7 +14,7 @@ const NAV_MENU_ROUTES: Routes = [
     { path: 'dashboard', component: DashboardComponent },
     { path: 'viewslider', component:ViewSliderComponent },    
     { path: 'manageguesthouse', component: ManageGuesthouseComponent },
-     { path: 'addguesthouse', component: GuestHouseComponent },
+     { path: 'addguesthouse', component: GuestHouseComponent},
      { path: 'viewghdetails/:id', component: ViewGuestHouseComponent },
      { path: 'addslider', component: AddSliderComponent },
      

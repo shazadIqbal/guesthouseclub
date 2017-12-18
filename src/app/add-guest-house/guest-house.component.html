@@ -1,0 +1,24 @@
+<div class="container">
+<h1>ADD GUEST HOUSE</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" >
+        <div class="form-control">
+          <label>Guest House Name: </label>
+          <input type="text"  class="form-control" placeholder="Enter Guest-House Name" formControlName="guestHouseName">
+           <label >Guest House Pictures: </label><input type="file" class="form-control" id="pix" aria-describedby="GH-pix" placeholder="upload pictures"> 
+      <label >Number of Rooms: </label><input type="text" class="form-control"  placeholder="Number of Rooms"  formControlName="noOfRooms">
+      <label >Owner Name: </label><input type="text" class="form-control" placeholder="Owner Number"  formControlName="ownerName">
+      <label >Owner Number: </label><input type="text" class="form-control" placeholder="Enter owner Number"  formControlName="ownerNumber">
+      <div FormGroupName="guestHouseAddress">
+        <label >Guest House Address </label><br/>
+        <label >Guest House Postal code: </label> <input type="text" formGroupControll.formControlName="postalcode"  class="form-control"  placeholder="Enter Postal-Code">
+        <label >Guest House Street: </label> <input type="text" class="form-control"  formGroupControll.formControlName="street" placeholder="Enter Guest-House Street">
+        <label >Guest House City: </label> <input type="text" class="form-control"  formGroupControll.formControlName="city" placeholder="Enter Guest-House City">
+      </div>
+
+      <input  type="submit" [disabled]="!myForm.valid" placeholder="submit">
+      
+  </div>
+  
+</form> 
+</div>

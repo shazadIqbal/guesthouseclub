@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { GuestHouseComponent } from './guest-house/guest-house.component';
+import { GuestHouseComponent } from './add-guest-house/guest-house.component';
 import { ManageGuesthouseComponent } from './manage-guesthouse/manage-guesthouse.component';
 import {HttpModule} from '@angular/http';
 import { ViewGuestHouseComponent } from './view-guest-house/view-guest-house.component';
 import { ViewSliderComponent } from './view-slider/view-slider.component';
+import { ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ViewSliderComponent } from './view-slider/view-slider.component';
     ViewSliderComponent,AddSliderComponent
   ],
   imports: [
-    BrowserModule,DataTablesModule,HttpModule,CONST_ROUTING],
+    BrowserModule,DataTablesModule,HttpModule,ReactiveFormsModule,CONST_ROUTING],
   providers: [],
   bootstrap: [AppComponent]
 })
